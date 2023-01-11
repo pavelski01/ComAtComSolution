@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RPC.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "--d D:\\repo\\ComAtComSolution\\RPC.Console\\Resource"
+    }
+  }
+}
