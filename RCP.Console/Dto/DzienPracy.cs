@@ -1,4 +1,4 @@
-﻿namespace RPC.Console.Dto
+﻿namespace RCP.Console.Dto
 {
     public class DzienPracy : IEquatable<DzienPracy>
     {

@@ -1,4 +1,4 @@
-﻿using RPC.Console.Utility;
+﻿using RCP.Console.Utility;
 
 var arguments = Environment.GetCommandLineArgs();
 

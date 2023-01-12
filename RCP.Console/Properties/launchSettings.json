@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RPC.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "--f D:\\repo\\ComAtComSolution\\RCP.Console\\Resource\\rcp1.csv"
+    }
+  }
+}

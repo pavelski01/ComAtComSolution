@@ -1,6 +1,6 @@
-﻿namespace RPC.Console.Utility
+﻿namespace RCP.Console.Utility
 {
-    using RPC.Console.Dto;
+    using RCP.Console.Dto;
     using System;
     using System.Globalization;
 
