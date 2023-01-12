@@ -165,12 +165,16 @@
 
         public static void DataPrinting(Dictionary<int, List<DzienPracy>> companiesDatas)
         {
-            var filteredDatas = UtilityBundle.DataFiltering(companiesDatas);
+            var filteredDatas = DataFiltering(companiesDatas);
             foreach (var filteredData in filteredDatas)
             {
                 Console.WriteLine("***********************************");
                 Console.WriteLine($"Dane firmowe {filteredData.Key}");
                 Console.WriteLine("***********************************");
+                Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+                Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+                Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+                Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
                 Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
                 var groups = filteredData.Value.GroupBy(k => k.KodPracownika);
                 foreach (var group in groups)
