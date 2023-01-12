@@ -163,6 +163,26 @@
             return companiesDatas;
         }
 
+        public static void DataPrinting(Dictionary<int, List<DzienPracy>> companiesDatas)
+        {
+            var filteredDatas = UtilityBundle.DataFiltering(companiesDatas);
+            foreach (var filteredData in filteredDatas)
+            {
+                Console.WriteLine("***********************************");
+                Console.WriteLine($"Dane firmowe {filteredData.Key}");
+                Console.WriteLine("***********************************");
+                Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+                var groups = filteredData.Value.GroupBy(k => k.KodPracownika);
+                foreach (var group in groups)
+                {
+                    Console.WriteLine("***********************************");
+                    Console.WriteLine($"Dane pracownika {group.Key}");
+                    Console.WriteLine("***********************************");
+                    group.ToList().ForEach(x => Console.WriteLine($"{x.Data:yyyy-MM-dd}: WE {x.GodzinaWejscia} / WY {x.GodzinaWyjscia}"));
+                }
+            }
+        }
+
         private static bool IsValidPath(string path, bool allowRelativePaths = false)
         {
             bool isValid;

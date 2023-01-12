@@ -16,4 +16,5 @@ if (!companiesDatas.Any())
 {
     Environment.Exit(0);
 }
-var filteredDatas = UtilityBundle.DataFiltering(companiesDatas);
+UtilityBundle.DataPrinting(companiesDatas);
+
